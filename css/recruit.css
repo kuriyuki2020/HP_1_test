@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* 採用情報 （recruit.html） */
+.recruit_top {
+  margin-top: -150px;
+}
+
+.recruit_inner {
+  text-align: center;
+  margin-top: -340px;
+}
+
+.recruit_wrap {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: .8;
+  text-align: center;
+  color: rgb(91, 93, 91);
+}
+
+.recruit_wrap_s {
+  font-size: 15px;
+  text-align: center;
+  color: rgb(146, 142, 142)
+}
+
+.recruit_inner h4,
+.recruit_inner2 h4 {
+  margin: 20px auto;
+  font-size: 30px;
+  color: rgb(68, 180, 58);
+}
+
+.recruit_inner p {
+  width: 70%;
+  font-size: 20px;
+  line-height: 2.5;
+  margin: 0 auto;
+}
+
+
+
+/* 社員の声 （recruit.html） */
+.recruit_img1 {
+  width: 40%;
+  position: relative;
+  top: 170px;
+  left: 300px;
+  z-index: 0;
+  margin-bottom: 150px;
+}
+
+.recruit_inner2 {
+  position: relative;
+  top: 260px;
+  left: 150px;
+  z-index: 1;
+  margin-bottom: 150px;
+}
+
+.recruit_wrap2 {
+  display: flex;
+  background-color: rgb(238, 238, 238);
+  margin: 50px auto;
+  padding: 30px;
+  width: 70%;
+}
+
+.recruit_item {
+  text-align: center;
+}
+
+.recruit_item_img {
+  width: 150px;
+  height: 150px;
+  margin: 30px;
+}
+
+.recruit_item_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgb(131, 126, 126);
+}
+
+.recruit_item p {
+  line-height: 0;
+  font-size: 18px;
+}
+
+.recruit_text {
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #FFF;
+  border: solid 2px rgb(68, 180, 58);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.recruit_text:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  margin-top: -12px;
+  border: 12px solid transparent;
+  border-right: 12px solid #FFF;
+  z-index: 2;
+}
+
+.recruit_text:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -14px;
+  border: 14px solid transparent;
+  border-right: 14px solid rgb(68, 180, 58);
+  z-index: 1;
+}
+
+.recruit_text p {
+  padding: 20px;
+  font-size: 20px;
+}

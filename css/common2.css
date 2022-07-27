@@ -1,0 +1,116 @@
+/* htmlディレクトリ内のファイルに適用する
+（headerやfooterなど*/
+
+/* ヘッダー （index.html以外のhtml） */
+header {
+  background-color: rgb(229, 235, 229)
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* 左右両端揃え */
+  align-items: center; /* 上下中央揃え */
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header_logo {
+  width: 20%;
+}
+
+.header img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav_ul {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  /* 空きスペースを埋めるようにナヴィゲーションを配置 */
+}
+
+.nav_li:not(:last-child) {
+  margin-right: 100px; /* 最後のli以外に指定 */
+}
+
+.nav_li a {
+  display: flex;
+  flex-direction: column; /* flexアイテムを縦並びにする */
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+.nav_li a:hover {
+  opacity: .5;
+}
+
+.nav_li span {
+  color: rgb(68, 180, 58);
+  text-shadow: black 1px 1px 1px;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.color {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* ページ見出し （index.html以外のhtml） */
+.pagetop {
+  display: flex;
+  align-items: center; /* 上下中央揃え */
+  margin: 30px auto;
+}
+
+.pagetop_img {
+  width: 10%;
+  margin:  20px -40px 20px auto;
+  z-index: 1;
+  background-color: #fff;
+  border: solid 1.5px rgb(91, 93, 91);
+  border-radius: 50%;
+}
+
+.pagetop_title {
+  margin: 20px auto 20px -40px;
+  -webkit-text-stroke: 3px rgb(91, 93, 91);
+  text-shadow: 4px 4px 0 rgb(68, 180, 58);
+  color: rgba(0 0 0 / 0);
+  font-size: 80px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'Montserrat',sans-serif;
+  border: dashed 2px rgb(145, 145, 143);
+  padding: 5px 25px 5px 80px;
+  z-index: 0;
+}
+
+.subtitle {
+  display: flex;  /* テキストと両脇２本の線を横並びさせる指定 */
+  justify-content: center;  /* テキストと2本の線を左右中央配置 */
+  align-items: center;  /* テキストと2本の線を上下中央配置 */
+  font-size: 35px;
+  color: rgb(145, 145, 143);
+  margin-top: -40px;
+}
+
+.subtitle::before,
+.subtitle::after {
+  content: "";
+  width: 40px;  /* 両脇の線の長さ */
+  height: 3px;  /* 両脇の線の太さ */
+  background-color: rgb(145, 145, 143);
+}
+
+.subtitle::before {
+  margin-right: 25px;  /* 右側線と文字の隙間 */
+}
+
+.subtitle::after {
+  margin-left: 25px;  /* 左側線とも胃の隙間 */
+}

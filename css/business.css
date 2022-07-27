@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/* 事業概要 （business.html） */
+.business_img {
+  width: 60%;
+  margin: -5% auto auto 5%;
+}
+
+.business_inner {
+  width: 50%;
+  margin: 10% 5% auto -10%;
+  text-align: center;
+}
+
+.business_wrap {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: .8;
+  text-align: center;
+  color: rgb(91, 93, 91);
+}
+
+.business_wrap_s {
+  font-size: 15px;
+  text-align: center;
+  color: rgb(146, 142, 142)
+}
+
+.business_inner h4 {
+  margin: 20px auto;
+  font-size: 25px;
+  color: rgb(68, 180, 58);
+}
+
+.business_inner p {
+  font-size: 20px;
+  line-height: 2.5;
+}
+
+.business_wrap2 {
+  margin-top: 150px;
+}
+
+.business_content {
+  width: 980px;
+  height: 130px;
+  margin: -340px auto 150px;
+  padding: 0 20px;
+  background-color: rgb(238, 238, 238);
+  border:  dotted 3px rgb(68, 180, 58);
+  padding: 50px;
+}
+
+
+.business_content h3 {
+  background-color: rgb(68, 180, 58);
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  font-weight: lighter;
+  position: relative;
+  bottom: 90px;
+  width: 40%;
+  margin: 0 auto 50px;
+  padding: 0 50px;
+  letter-spacing: 5px;
+}
+
+.business_element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -160px auto 0
+}
+
+.business_element ul {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 100px;
+}
+
+.business_element ul li {
+  list-style: disc;
+  width: 40%;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.business_element ul li:last-child {
+  margin-bottom: 0;
+}
+
+.button_business {
+  font-size: 25px;
+  width: 250px;
+  margin: -140px auto 0;
+}
+
+.button_business a{
+  display: flex; /* 擬似要素と横並びにする */
+  align-items: center; /* テキストと擬似要素を上下中央揃え */
+  background-color: rgb(68, 180, 58);
+  box-shadow: 4px 4px 5px rgb(112, 109, 109);
+  border-radius: 20px;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 20px 36px;
+  color: white;
+}
+
+
+.button_business a::after {
+  content: "";
+  transform: rotate(45deg); /* 45度回転 */
+  width: 15px;
+  height: 15px;
+  border-top: solid 2px white; /* 矢印の一辺 */
+  border-right: solid 2px white; /* 矢印の一辺 */
+  margin-left: 30px;
+}
+
+.button_business a:hover {
+  transform: scale(1.1); /* ホバー時大きくする */
+  opacity: .6;
+  transition: .4s; /* 動きを滑らかにする */
+}
+
+.business_inner2 {
+  width: 60%;
+  margin-top: -550px;
+  margin-left: 50px;
+}
+
+.business_img_inner {
+  display: flex;
+  width: 25%;
+}
+
+.business_img2 {
+  width: 70%;
+  position: relative;
+  top: -260px;
+  left: -50px;
+  z-index: 1;
+}
+
+.business_img3 {
+  width: 90%;
+  position: relative;
+  top: -480px;
+  right: 150px;
+  z-index: 0;
+}
+
+.business_contact {
+  margin-top: -150px;
+}

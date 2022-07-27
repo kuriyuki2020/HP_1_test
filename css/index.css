@@ -1,0 +1,413 @@
+@charset "UTF-8";
+
+/* ヘッダー */
+.top_inner {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background: url(../img/top_1.jpg);
+}
+
+.top_inner::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  border-left: 1200px solid transparent;
+  border-top: 400px solid rgba(68, 180, 58, .5);
+  z-index: 0;
+}/* 角に三角形を表示 */
+
+.top_title {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 2;
+  text-shadow: 5px 2px 3px #fff;
+}
+
+.top_title h1 {
+  font-size: 100px;
+  color: black;
+}
+
+.top_title h2 {
+  font-size: 70px;
+  color: rgb(53, 50, 50);
+  line-height: 0;
+}
+
+.top_title p {
+  font-size: 30px;
+  color: black;
+  line-height: 5;
+}
+
+.header_list_top {
+  margin-top: 100px;
+  margin-bottom: -50px;
+}
+
+.header_list nav {
+  display: flex; /* 横並び */
+  justify-content: space-between; /* 左右両端揃え */
+  margin: 50px 15%;
+}
+
+.nav_item {
+  padding: 30px;
+  width: 32%;
+  text-align: center;
+}
+
+.item1,
+.item2,
+.item3 {
+  background-color: rgb(229, 235, 229);
+}
+
+.nav_item:hover {
+  transform: scale(1.1); /* ホバー時大きくする */
+  opacity: .6;
+  transition: .4s; /* 動きを滑らかにする */
+}
+
+.item1:hover {
+  background-color: rgb(241, 219, 235);
+}
+
+.item2:hover {
+  background-color: rgb(206, 244, 219);
+}
+
+.item3:hover {
+  background-color: rgb(242, 225, 176);
+}
+
+.nav_item h3 {
+  font-size: 20px;
+}
+
+.nav_item img {
+  width: 60%;
+  height: 70%;
+  text-align: center;
+  border-radius: 50%;
+}
+
+
+
+/* ニュース */
+.section {
+  margin: 0 0 50px;
+}
+
+.inner {
+  display: flex;
+}
+
+.news_img {
+  width: 38%;
+}
+
+.back1 {
+  width: 55%;
+  height: 400px;
+  background-color: rgba(80, 241, 150, 0.204);
+  margin: 30px 0 0 auto;
+  z-index: 0;
+}
+
+.back2 {
+  width: 55%;
+  height: 400px;
+  background-color: rgba(80, 241, 150, 0.204);
+  margin: 250px auto 0 0;
+  z-index: 0;
+}
+
+.news_title {
+  margin: 5% 15% 0 -5% ;
+}
+
+.title_h3 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: .8;
+  text-align: center;
+  color: black;
+}
+
+.title_small {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(146, 142, 142);
+}
+
+.news_list {
+  border: solid 2px rgb(117, 113, 113);
+  background-color: rgb(248, 251, 248);
+  margin: 10px 0 0;
+  padding: 5%;
+  font-size: 20px;
+  line-height: 3;
+}
+
+
+/* フィーチャー 特徴 */
+.feature_title {
+width: 40%;
+margin: 18% 0;
+}
+
+.feature_img {
+  width: 35%;
+  height: auto;
+  z-index: 100;
+  margin-left: -30%;
+  margin-top: 10%;
+}
+
+.feature_img img {
+  width: 100%;
+}
+
+.feature_message {
+  width: 35%;
+  padding: 20px;
+  margin-top: 20%;
+  line-height: 2.5;
+  font-size: 18px;
+}
+
+/* サービス */
+.service {
+  margin-top: 160px;
+}
+
+.service_inner {
+  margin-top: -20%;
+}
+
+.service_inner h3 {
+  font-size: 35px;
+  line-height: 1;
+}
+
+.service_inner small {
+  font-size: 15px;
+  color: rgb(68, 180, 58);
+}
+
+.service_inner p {
+  font-size: 20px;
+  line-height: 2.5;
+  margin-top: 5%;
+}
+
+.service_item {
+  width: 80%;
+  padding: 5%;
+  margin: 5%;
+  border: solid  2px rgb(117, 113, 113);
+  background-color: rgb(248, 251, 248);
+}
+
+.service_img {
+  width: 40%;
+  margin-top: -20%;
+}
+
+.button {
+  margin: 3%;
+}
+
+.button a{
+  display: flex; /* beforeと横並びにする */
+  align-items: center; /* テキストとbeforeを上下中央揃え */
+  background-color: rgba(68, 180, 58, 0.558);
+  box-shadow: 4px 4px 5px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.button a::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background:url(../img/business_i.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.button a::after {
+  content: "";
+  transform: rotate(45deg); /* 45度回転 */
+  width: 15px;
+  height: 15px;
+  border-top: solid 2px black; /* 矢印の一辺 */
+  border-right: solid 2px black; /* 矢印の一辺 */
+  margin: 0 auto;
+}
+
+.button a:hover {
+  transform: scale(1.1); /* ホバー時大きくする */
+  opacity: .6;
+  transition: .4s; /* 動きを滑らかにする */
+}
+
+.button p {
+  font-size: 25px;
+}
+
+/* 採用について */
+.recruit_img {
+  width: 60%;
+  margin: -5% auto auto 5%;
+}
+
+.recruit_title {
+  width: 50%;
+  margin: 10% 5% auto -10%;
+  text-align: center;
+}
+
+.recruit_title h4 {
+  margin: 20px auto;
+  font-size: 25px;
+  color: rgb(68, 180, 58);
+}
+
+.recruit_title p {
+  font-size: 20px;
+  line-height: 2.5;
+}
+
+.button_recruit a::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: url(../img/recruit_i.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+
+/* お問合せ */
+.contact_title {
+  margin: 130px auto 50px;
+}
+
+.form {
+  text-align: center;
+}
+
+label {
+  display: flex;
+  align-self: center;
+  justify-content: center; /* flexの時中央寄せ */
+}
+
+.form_title {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding-right: 20px;
+  width: 220px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.textarea_title {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  padding-top: 10px;
+  padding-right: 20px;
+  width: 220px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+input,
+textarea {
+  display: block;
+  padding: 20px;
+  background-color: rgb(248, 251, 248);
+  border: solid 2px rgb(68, 180, 58);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.submit_button {
+  background-color: rgba(68, 180, 58, 0.558);
+  box-shadow: 1px 1px 5px;
+  border-radius: 20px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  margin: 30px auto;
+  font-size: 18px;
+}
+
+.submit_button:hover {
+  transform: scale(1.1); /* ホバー時大きくする */
+  opacity: .6;
+  transition: .4s; /* 動きを滑らかにする */
+}
+
+/* フッター */
+.footer {
+  background-color: rgb(229, 235, 229);
+}
+
+.footer_inner {
+  display: flex;
+  margin: 50px auto;
+}
+
+.footer_left {
+  margin: auto 50px;
+}
+
+.footer_left img {
+  width: 300px;
+}
+
+.footer_list {
+  display: flex;
+  width: 300px;
+  margin: auto;
+  line-height: 2.5;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.list_left {
+  margin-right: 50px;
+}
+
+.footer_list li {
+  display: flex; /* beforeと横並びにする */
+  align-items: center; /* テキストとbeforeを上下中央揃え */
+}
+
+.footer_list li:hover {
+  opacity: .5;
+}
+
+.footer_list li::after {
+  content: "";
+  transform: rotate(45deg); /* 45度回転 */
+  width: 5px;
+  height: 5px;
+  border-top: solid 2px rgb(87, 82, 82); /* 矢印の一辺 */
+  border-right: solid 2px rgb(87, 82, 82); /* 矢印の一辺 */
+  margin: 0 auto;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>プログラミング教材「CODESTAR」</title>
+    <meta name="description" content="HP１のページです。" />
+    <meta name="keywords" content="IT,プログラミング,コミュニティ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="プログラミング教材「CODESTAR」" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="img/logo.png" />
+    <meta property="og:description" content="HP１のページです。" />
+    <meta property="og:site_name" content="プログラミング教材" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180×180" href="img/logo.png" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common1.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common2.css" />
+    <link rel="stylesheet" type="text/css" href="../css/company.css" />
+  </head>
+
+  <body>
+    <!-- ヘッダー （common2.css）-->
+    <header>
+      <div class="header">
+        <div class="header_logo">
+          <img src="../img/logo.png" alt="ヘッダーロゴ画像">
+        </div>
+        <nav>
+          <ul class="nav_ul">
+            <li class="nav_li">
+              <a href="../index.html"><span>トップ</span>TOP</a>
+            </li>
+            <li class="nav_li">
+              <a class="color" href="./company.html"><span>会社概要</span>COMPANY</a>
+            </li>
+            <li class="nav_li">
+              <a href="./business.html"><span>事業概要</span>BUSINESS</a>
+            </li>
+            <li class="nav_li">
+              <a href="./recruit.html"><span>採用情報</span>RECRUIT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+      <!-- ページ見出し （common2.css） -->
+      <section class="section">
+        <div class="pagetop">
+          <img class="pagetop_img" src="../img/company_i.png" alt="会社概要見出し画像">
+          <p class="pagetop_title">COMPANY</p>
+        </div>
+        <p class="subtitle">会社概要</p>
+      </section>
+
+
+      <!-- 会社の情報 （company.css） -->
+      <section class="section">
+        <div class="inner">
+          <div class="back2">
+            <table class="company_table">
+              <tr>
+                <th>商号</th>
+                <td>株式会社◯◯◯◯</td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>◯◯◯◯◯◯◯◯◯◯◯◯
+                  <br>（<a class="map_link" href="">Googleマップ</a>）</td>
+              </tr>
+              <tr>
+                <th>創立</th>
+                <td>◯◯◯◯◯◯◯◯◯◯◯◯</td>
+              </tr>
+              <tr>
+                <th>資本金</th>
+                <td>◯◯◯◯◯◯◯◯円</td>
+              </tr>
+              <tr>
+                <th>社長</th>
+                <td>代表取締役　◯◯◯◯</td>
+              </tr>
+            </table>
+          </div>
+          <img class="company_img1" src="../img/company_1.jpg" alt="会社情報画像１">
+        </div>
+
+        <div class="inner">
+          
+          
+          <img class="company_img2" src="../img/company_2.jpg" alt="会社情報画像２">
+          <div class="back1">
+            <table class="company_table">
+              <tr>
+                <th>事業内容</th>
+                <td>◯◯◯◯◯◯◯◯◯◯◯◯
+                    ◯◯◯◯◯◯◯◯◯◯◯◯
+                    ◯◯◯◯◯◯◯◯◯◯◯◯
+                    ◯◯◯◯◯◯◯◯◯◯◯◯</td>
+              </tr>
+              <tr>
+                <th>TEL</th>
+                <td><a href="">◯◯-◯◯◯◯-◯◯◯◯</a></td>
+              </tr>
+              <tr>
+                <th>FAX</th>
+                <td><a href="">◯◯-◯◯◯◯-◯◯◯◯</a></td>
+              </tr>
+              <tr>
+                <th>URL</th>
+                <td><a href="">https://◯◯◯◯◯◯◯◯</a></td>
+              </tr>
+            </table>
+          
+        </div>
+
+      </section>
+      
+
+
+      <!-- お問合せ -->
+      <section class="section">
+      <div class="contact_title">
+        <h3 class="title_h3">
+            CONTACT<br><small class="title_small">お問い合せ</small>
+          </h3>
+      </div>
+      <form class="form" method="post">
+        <div>
+          <label for="name">
+            <p class="form_title">Name:</p>
+            <input type="text" id="name" name="user_name">
+          </label>
+        </div>
+        <div>
+          <label for="mail">
+            <p class="form_title">E-mail:</p>
+            <input type="email" id="mail" name="user_mail">
+          </label>
+        </div>
+        <div>
+          <label for="tel">
+            <p class="form_title">Tel:</p>
+            <input type="tel" id="tel" name="user_tel">
+          </label>
+        </div>
+        <div>
+          <label for="msg">
+            <p class="textarea_title">Message:</p>
+            <textarea id="msg" name="user_message"></textarea>
+          </label>
+        </div>
+        <div>
+          <button class="submit_button" type="submit">送信</button>
+        </div>
+      </form>
+
+    </section>
+      
+    </main>
+
+
+    <footer class="footer">
+    <!-- フッター -->
+    <div class="inner">
+      <div class="footer_inner">
+        <div class="footer_left">
+          <img src="../img/logo.png" alt="ロゴ画像">
+          <p>
+            〒◯◯◯-◯◯◯◯<br>
+            ◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯<br>
+            TEL ◯◯-◯◯◯◯-◯◯◯◯
+          </p>
+        </div>
+        <div class="footer_list">
+          <ul class="list_left">
+            <li><a href="../index.html">ホーム</a></li>
+            <li><a href="../html/company.html">会社概要</a></li>
+            <li><a href="../html/business.html">事業内容</a></li>
+          </ul>
+          <ul class="list_right">
+            <li><a href="../html/recruit.html">採用情報</a></li>
+            <li><a href="html/news.html">お知らせ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </footer>
+  </body>
+</html>
